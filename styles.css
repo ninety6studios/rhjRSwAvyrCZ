@@ -1,0 +1,141 @@
+body {
+    font-family: inter, Arial, sans-serif;
+    text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.user-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc; /* Placeholder color */
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.client-email {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.tracking-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.tracking-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oval1,
+.oval2,
+.oval3 {
+    width: 30px;
+    height: 30px;
+    background-color: #191e2f; /* Placeholder color */
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.horizontal-line1,
+.horizontal-line2 {
+    width: 40px; /* Adjusted width */
+    height: 2px;
+    background-color: #ccc; /* Placeholder color */
+    margin: 0 10px; /* Adjusted margin */
+}
+
+.text1,
+.text2,
+.text3 {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.horizontal-line1 {
+    width: 0; /* Initial width set to 0 */
+    height: 2px;
+    background-color: #191e2f; /* Start color */
+    margin: 0 10px; /* Adjusted margin */
+    transition: width 1s ease; /* Smooth transition for width change */
+}
+
+.oval2 {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc; /* Placeholder color */
+    border-radius: 50%;
+    margin-bottom: 5px;
+    transition: background-color 1s ease; /* Smooth transition for background-color change */
+}
+
+.horizontal-line2 {
+    width: 0; /* Initial width set to 0 */
+    height: 2px;
+    background-color: #191e2f; /* Start color */
+    margin: 0 10px; /* Adjusted margin */
+    transition: width 1s ease; /* Smooth transition for width change */
+}
+
+.oval3 {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc; /* Placeholder color */
+    border-radius: 50%;
+    margin-bottom: 5px;
+    transition: background-color 1s ease; /* Smooth transition for background-color change */
+}
+
+.tracking-row {
+    transform: scale(0.8); /* Adjust the scale value as needed */
+}
+
+.client-email {
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.tracking-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    font-size: 14px;
+}
+
+h {
+    padding: 20px;
+}
+
+.tracking-number strong {
+    line-height: 1.7;
+    font-weight: bold;
+}
+
+p2 {
+    line-height: 1.9;
+}
+
+p {
+    font-size: 16px;
+}
+
+.text2 {
+    color: black;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}

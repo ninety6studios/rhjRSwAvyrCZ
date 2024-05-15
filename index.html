@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .block1, .block2, .block3 {
+            background-color: #191E2F;
+            padding: 20px;
+            border-radius: 40px;
+            margin-bottom: 20px;
+        }
+
+        .block-content {
+            color: white;
+            font-size: 11px;
+        }
+
+        .content-break {
+            height: 30px;
+            background-color: #ffffff;
+        }
+        .content-break5 {
+            height: 70px;
+            background-color: #ffffff;
+        }
+        .content-break2 {
+            height: 0px;
+            background-color: #ffffff;
+        }
+
+        .content-break hr {
+            border-color: grey;
+        }
+
+        hr {
+            display: none; /* Hide all horizontal lines */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="tracking-number">
+            Tracking Number <br>
+            <strong>1xX72D6WgvDk</strong>
+        </div>
+        <div class="content-break5"></div>
+        <img src="Profile.png" alt="User Profile" width="89" height="89">
+        <div class="client-email">Mirwanare <br>WUJ980</div>
+
+        <!-- Content Break -->
+        <div class="content-break4"></div>
+
+        <!-- Graphic Design Tracking -->
+        <div class="tracking-row">
+            <div class="tracking-item">
+                <div class="oval1"></div>
+                <div class="text1">Preparing</div>
+            </div>
+            <div class="horizontal-line1"></div>
+            <div class="tracking-item">
+                <div class="oval2"></div>
+                <div class="text2">Designing</div>
+            </div>
+            <div class="horizontal-line2"></div>
+            <div class="tracking-item">
+                <div class="oval3"></div>
+                <div class="text3">Finished</div>
+            </div>
+        </div>
+        
+
+        <!-- Content Break -->
+        <div class="content-break"></div>
+
+        <!-- Content Blocks -->
+        <div class="block1" id="block1">
+            <div class="block-content">
+                <p>Last updated</p>
+                <p id="date1">10 May 2024</p>
+                <p2>We're preparing your design project or your design project is in the waiting list.</p>
+            </div>
+        </div>
+
+        <!-- Content Break -->
+        <div class="content-break2"><hr></div>
+
+        <div class="block2" id="block2">
+            <div class="block-content">
+                <p>Last update</p>
+                <p id="date2"> 13 May 2024</p>
+                <p2>We're now designing your project. This can take 3-4 working days.</p>
+            </div>
+        </div>
+
+        <!-- Content Break -->
+        <div class="content-break2"><hr></div>
+
+        <div class="block3" id="block3">
+            <div class="block-content">
+                <p>Last update</p>
+                <p id="date3">2024</p>
+                <p2>Your design is completed and ready for collection.</p>
+            </div>
+        </div>
+
+        <div class="content-break2"><hr></div>
+        <div class="thank-you-message" style="font-size: 9px;">
+            Thank you for being Patient, your Project is in the hands of Professionals.<br>
+            For more info visit <a href="https://www.96Studios.co.za">www.96Studios.co.za</a> or WhatsApp us 0817925033
+        </div>
+    </div>
+
+      <script>
+        // JavaScript code for redirection
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // Mobile device detected, do nothing
+        } else {
+            // Not a mobile device, redirect to no.html
+            window.location.replace("no.html");
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        // Hide block3 by default
+        document.querySelectorAll(".block3").forEach(function(element) {
+        element.style.display = "none";
+         });
+
+        // Function to show blocks based on value
+        function showBlocks(value) {
+        if (value >= 2) {
+            document.querySelectorAll(".block2").forEach(function(element) {
+                element.style.display = "block";
+            });
+
+            // Smoothly animate horizontal-line1 width
+            document.querySelector(".horizontal-line1").style.width = "40px"; // Set width to desired value
+
+            // After the animation completes, change the color of oval2
+            setTimeout(function() {
+                document.querySelector(".oval2").style.backgroundColor = "#191E2F";
+            }, 1000); // Wait for 1 second (1000 milliseconds) for the animation to complete
+
+            // Change text colors
+            document.querySelector(".text1").style.color = "grey";
+            document.querySelector(".text3").style.color = "grey";
+            document.querySelector(".text2").style.color = "black";
+        } else {
+            document.querySelectorAll(".block2").forEach(function(element) {
+                element.style.display = "none";
+            });
+
+            // Reset horizontal-line1 width
+            document.querySelector(".horizontal-line1").style.width = "0";
+            // Reset color of oval2
+            document.querySelector(".oval2").style.backgroundColor = "#ccc";
+
+            // Change text color
+            document.querySelector(".text1").style.color = "black";
+            document.querySelector(".text3").style.color = "grey";
+            document.querySelector(".text2").style.color = "grey";
+        }
+        if (value >= 3) {
+            document.querySelectorAll(".block3").forEach(function(element) {
+                element.style.display = "block";
+            });
+
+            // Smoothly animate horizontal-line2 width
+            document.querySelector(".horizontal-line2").style.width = "40px"; // Set width to desired value
+
+            // Smoothly animate oval3 to #191E2F
+            setTimeout(function() {
+                document.querySelector(".oval3").style.backgroundColor = "#191E2F";
+            }, 1000); // Wait for 1 second (1000 milliseconds) for the animation to complete
+
+            // Change text color
+            document.querySelector(".text1").style.color = "grey";
+            document.querySelector(".text3").style.color = "black";
+            document.querySelector(".text2").style.color = "grey";
+        } else {
+            document.querySelectorAll(".block3").forEach(function(element) {
+                element.style.display = "none";
+            });
+
+            // Reset horizontal-line2 width
+            document.querySelector(".horizontal-line2").style.width = "0";
+            // Reset color of oval3
+            document.querySelector(".oval3").style.backgroundColor = "#ccc";
+
+            // Change text color
+            document.querySelector(".text1").style.color = "black";
+            document.querySelector(".text3").style.color = "grey";
+        }
+    }
+
+    // Example usage:
+    // showBlocks(2); // This will show block2 and change colors with animations
+    // showBlocks(3); // This will show block2 and block3
+    showBlocks(3);
+
+    fadeIn(document.getElementById("block2"));
+        fadeIn(document.getElementById("block3"));
+    });
+
+    function fadeIn(element) {
+        // Add the fade-in class to trigger the animation
+        element.classList.add("fade-in");
+
+        // Remove the fade-in class after the animation completes
+        setTimeout(function() {
+            element.classList.remove("fade-in");
+        }, 500); // Wait for the animation duration (0.5s)
+    }
+    </script>
+</body>
+</html>
